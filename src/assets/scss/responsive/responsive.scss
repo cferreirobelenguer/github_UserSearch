@@ -1,0 +1,17 @@
+
+
+@mixin tablet_design{
+    @media (max-width: 693px) {
+        @content;
+    }
+}
+@mixin mobile_design{
+    @media (max-width: 531px) {
+        @content;
+    }
+}
+@mixin mobile_design2{
+    @media (max-width: 400px) {
+        @content;
+    }
+}

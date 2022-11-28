@@ -1,0 +1,479 @@
+
+@import './color/color.scss';
+@import './responsive/responsive.scss';
+//fonts
+@font-face {
+    font-family: "githubFont";
+    src: url("../fonts/DejaVuSansMono.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+$githubFont:"githubFont";
+$fontWeightNormal:400;
+$fontWeightBold:bold;
+
+//Component app
+.AppLight {
+    padding: 20px 20px 100px 20px;
+    background-color: $lightColor;
+    text-align: center;
+    }
+.AppDark {
+    padding: 20px 20px 100px 20px;
+    background-color: $darkColor;
+    text-align: center;
+    }
+.header{
+    display:flex;
+    flex-direction: row;
+    padding:20px;
+    justify-content: flex-start;
+}
+.header_titleLight{
+    color:$darkColor;
+    font-family: $githubFont;
+    font-weight: $fontWeightBold;
+}
+.header_titleDark{
+    color:$lightColor;
+    font-family: $githubFont;
+    font-weight: $fontWeightBold;
+}
+.header_button{
+    margin-left: 65vw;
+}
+.button_Light{
+    background-color: $lightColor;
+    border-style:none;
+    border-color: transparent;
+}
+.button_Dark{
+    background-color: $darkColor;
+    border-style:none;
+    border-color: transparent;
+}
+.button_Light{
+    color:$darkColor;
+    font-family: $githubFont;
+    font-weight: $fontWeightNormal;
+    background-color: $lightColor;
+}
+.button_Dark{
+    color:$lightColor;
+    font-family: $githubFont;
+    font-weight: $fontWeightNormal;
+    background-color: $darkColor;
+}
+
+//component searchBar
+
+.card_container{
+    border-radius: 20px;
+    margin: 20px;
+    font-family: $githubFont;
+
+}
+.card_searchLight{
+    border-radius: 30px;
+    background-color: $lightColorInput;
+    padding: 30px 0px 30px 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card_searchDark{
+    border-radius: 30px;
+    background-color: $DarkColorInput;
+    padding: 30px 0px 30px 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card_button{
+    padding-left:10px;
+}
+#buttonSearch{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+#searchBarDark{
+    background-color: $DarkColorInput;
+    border-color: transparent;
+    border-style: none;
+    width: 40vw;
+    color:white;
+}
+#searchBarLight{
+    background-color: $lightColorInput;
+    border-color: transparent;
+    border-style: none;
+    width: 40vw;
+}
+
+.card_dataDark{
+    margin:50px;
+    padding: 50px;
+    background-color: $DarkColorInput;
+    border-radius: 20px;
+    font-size: 12px;
+    color:white;
+}
+
+.card_dataLight{
+    margin:50px;
+    padding: 50px;
+    background-color: $lightColorInput;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+//component CardInfo
+
+.card_containerInfo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size:12px;
+}
+#card_imagen{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+.card_username{
+    text-align: left;
+    padding-left: 20px;
+}
+.card_login2{
+    text-align: left;
+    padding-left: 20px;
+    color:blue;
+}
+.card_date{
+    text-align: left;
+    padding-left: 20px;
+}
+.bio{
+    text-align: left;
+    padding-left: 20px;
+}
+.card_containerInfo2{
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.card_container_info1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card_container_info{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+
+.card_followers{
+    padding-left: 10px;
+}
+.card_following{
+    padding-left: 10px;
+}
+.card_repos_url{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card_followers_url{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card_following_url{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card_containerInfo3{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.card_info2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.card_info3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.company{
+    padding-left: 20px;
+}
+.url{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+//Component app responsive tablet
+
+@include tablet_design{
+    .card_searchLight{
+        border-radius: 30px;
+        background-color: $lightColorInput;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .card_searchDark{
+        border-radius: 30px;
+        background-color: $DarkColorInput;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .header_button{
+        margin-left: 50vw;
+    }
+    .card_button{
+        padding-left:10px;
+    }
+    #buttonSearch{
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+    }
+    #searchBarDark{
+        background-color: $DarkColorInput;
+        border-color: transparent;
+        border-style: none;
+        width: 40vw;
+        font-size: 10px;
+    }
+    #searchBarLight{
+        background-color: $lightColorInput;
+        border-color: transparent;
+        border-style: none;
+        width: 40vw;
+        font-size: 10px;
+    }
+    //component CardInfo
+    #card_imagen{
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    
+
+}
+//Component app responsive mobile
+
+@include mobile_design{
+    //Component SearchBar
+    .card_searchLight{
+        border-radius: 30px;
+        background-color: $lightColorInput;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card_searchDark{
+        border-radius: 30px;
+        background-color: $DarkColorInput;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .header_button{
+        margin-left: 30vw;
+    }
+    #buttonSearch{
+        padding: 5px 5px 5px 5px;
+        border-radius: 10px;
+        width: 67px;
+        font-family: 5px;
+    }
+    #searchBarDark{
+        background-color: $DarkColorInput;
+        border-color: transparent;
+        border-style: none;
+        width: 100px;
+        font-size: 8px;
+    }
+    #searchBarLight{
+        background-color: $lightColorInput;
+        border-color: transparent;
+        border-style: none;
+        width: 100px;
+        font-size: 8px;
+    }
+    //component CardInfo
+    #card_imagen{
+        border-radius: 50px;
+        width: 70px;
+        height: 70px;
+        padding-left: 20px;
+    }
+    .card_info2{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        flex-wrap: wrap;
+        font-size: 8px;
+    }
+    .card_info3{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        flex-wrap: wrap;
+        font-size: 8px;
+    }
+    .card_username{
+        text-align: left;
+        padding-left: 10px;
+        padding-right:  20px;
+        font-size: 6px;
+    }
+    .card_login2{
+        padding-right:  20px;
+        text-align: left;
+        padding-left: 10px;
+        color:blue;
+        font-size: 8px;
+    }
+    .card_date{
+        padding-right:  20px;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    .bio{
+        text-align: left;
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    .card_containerInfo2{
+        padding: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .url{
+        font-size: 6px;
+    }
+
+}
+
+@include mobile_design2{
+    //component SearchBar
+    .card_searchLight{
+        border-radius: 30px;
+        background-color: $lightColorInput;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card_searchDark{
+        border-radius: 30px;
+        background-color: $DarkColorInput;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #buttonSearch{
+        padding: 5px 5px 5px 5px;
+        border-radius: 10px;
+        width: 67px;
+        font-family: 5px;
+    }
+    #searchBarDark{
+        background-color: $DarkColorInput;
+        border-color: transparent;
+        border-style: none;
+        width: 50px;
+        font-size: 8px;
+    }
+    #searchBarLight{
+        background-color: $lightColorInput;
+        border-color: transparent;
+        border-style: none;
+        width: 50px;
+        font-size: 8px;
+    }
+    //component CardInfo
+    #card_imagen{
+        border-radius: 50px;
+        width: 70px;
+        height: 70px;
+        padding-left: 20px;
+    }
+    .card_username{
+        text-align: left;
+        padding-left: 10px;
+        padding-right:  20px;
+        font-size: 6px;
+    }
+    .card_login2{
+        padding-right:  20px;
+        text-align: left;
+        padding-left: 10px;
+        color:blue;
+        font-size: 8px;
+    }
+    .card_date{
+        padding-right:  20px;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    .bio{
+        text-align: left;
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    .card_containerInfo2{
+        padding: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+}
