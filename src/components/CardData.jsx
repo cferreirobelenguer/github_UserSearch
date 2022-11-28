@@ -2,8 +2,8 @@ import React from 'react'
 import { CardInfo } from './CardInfo'
 
 
-export const CardData=({isLoading,info,error})=>{
-
+export const CardData=({isLoading,info,error,style2})=>{
+    console.log("componente cardinfo: "+style2)
     return(
         <>
             {isLoading && 
@@ -16,7 +16,7 @@ export const CardData=({isLoading,info,error})=>{
                 </div>}
             {!isLoading && info && 
                 <div className="card_dataInfo">
-                    <CardInfo info={info}></CardInfo>
+                    <CardInfo info={info} style={style2}></CardInfo>
                 </div>}
         </>
         

@@ -165,7 +165,7 @@ $fontWeightBold:bold;
     text-align: left;
     padding-left: 20px;
 }
-.card_containerInfo2{
+.card_containerInfo2Dark{
     padding: 50px;
     display:flex;
     flex-direction: column;
@@ -173,6 +173,17 @@ $fontWeightBold:bold;
     align-items: center;
     border-radius: 10px;
     font-size: 10px;
+    background-color: $darkColor;
+}
+.card_containerInfo2Light{
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: $lightColorInput;
 }
 
 .card_container_info1{
@@ -196,16 +207,16 @@ $fontWeightBold:bold;
     padding-left: 10px;
 }
 .card_repos_url{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .card_followers_url{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .card_following_url{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card_containerInfo3{
@@ -338,7 +349,7 @@ $fontWeightBold:bold;
         border-radius: 50px;
         width: 70px;
         height: 70px;
-        padding-left: 20px;
+        
     }
     .card_info2{
         display:flex;
@@ -380,17 +391,36 @@ $fontWeightBold:bold;
         padding-left: 10px;
         font-size: 8px;
     }
-    .card_containerInfo2{
+    .card_containerInfo2Light{
         padding: 20px;
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        font-size: 10px;
+        font-size: 6px;
+        background-color: $ligthColorFollowers;
+    }
+    .card_containerInfo2Dark{
+        padding: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 6px;
+        background-color: $darkColor;
     }
     .url{
         font-size: 6px;
+    }
+    .card_container_info{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        
     }
 
 }
@@ -440,7 +470,7 @@ $fontWeightBold:bold;
         border-radius: 50px;
         width: 70px;
         height: 70px;
-        padding-left: 20px;
+        
     }
     .card_username{
         text-align: left;
@@ -466,14 +496,41 @@ $fontWeightBold:bold;
         padding-left: 10px;
         font-size: 8px;
     }
-    .card_containerInfo2{
+    .card_containerInfo2Light{
         padding: 20px;
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        font-size: 10px;
+        font-size: 4px;
+        background-color: $lightColorInput;
+    }
+    .card_containerInfo2Dark{
+        padding: 10px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 4px;
+        background-color: $darkColor;
+        width: 100%;
+    }
+    .card_repos_url{
+        font-size: 4px;
+    }
+    .card_followers_url{
+        font-size: 4px;
+    }
+    .card_following_url{
+        font-size: 4px;
+    }
+    .card_container_info{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
 }

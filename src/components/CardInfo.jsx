@@ -1,49 +1,49 @@
 import React from 'react'
 
-export const CardInfo=(props)=>{
+export const CardInfo=({info,style})=>{
     
     return(
         <>
             <div className="card_containerInfo">
                 <div className="card_avatarUrl">
-                    <img src={props.info.avatar_url}  alt="" id="card_imagen"></img>
-                    {console.log("componente cardinfo: "+props.style)}
+                    <img src={info.avatar_url}  alt="" id="card_imagen"></img>
+                    
                 </div>
                 <div className="card_info">
                     <div className="card_username">
-                        <h6>{props.info.name}</h6>
+                        <h6>{info.name}</h6>
                     </div>
                     <div className="card_login2">
-                        <p>{props.info.login? "@"+props.info.login:""}</p>
+                        <p>{info.login? "@"+info.login:""}</p>
                     </div>
                     <div className="card_date">
-                        <p>{props.info.created_at}</p>
+                        <p>{info.created_at}</p>
                     </div>
                 </div>
             </div>
             <div className="bio">
-                {props.info.bio===null ? <p>This profile has no bio</p> : <p>{props.info.bio}</p>}
+                {info.bio===null ? <p>This profile has no bio</p> : <p>{info.bio}</p>}
             </div>
-            <div className="card_containerInfo2">
+            <div className={style?"card_containerInfo2Light":"card_containerInfo2Dark"}>
                 <div className="card_container_info1">
-                    <div className="card_repos">{props.info.public_repos? <p>Repos</p>:""}</div>
-                    <div className="card_followers">{props.info.followers? <p>Followers</p>:""}</div>
-                    <div className="card_following">{props.info.following? <p>Following</p>:""}</div>
+                    <div className="card_repos">{info.created_at? <p>Repos</p>:""}</div>
+                    <div className="card_followers">{info.created_at? <p>Followers</p>:""}</div>
+                    <div className="card_following">{info.created_at? <p>Following</p>:""}</div>
                 </div>
                 <div className="card_container_info">
-                    <div className="card_repos_url">{props.info.public_repos}</div>
-                    <div className="card_followers_url">{props.info.followers}</div>
-                    <div className="card_following_url">{props.info.following}</div>
+                    <div className="card_repos_url">{info.public_repos}</div>
+                    <div className="card_followers_url">{info.followers}</div>
+                    <div className="card_following_url">{info.following}</div>
                 </div>
             </div>
             <div className='card_containerInfo3'>
                 <div className="card_info2">
-                    <div className="city">{props.info.city}</div>
-                    <div className="twitter">{props.info.twitter_username===null ? <p>Not Avariable</p>: <p>{props.info.twitter_username}</p>}</div>
+                    <div className="city">{info.city}</div>
+                    <div className="twitter">{info.twitter_username===null ? <p>Not Avariable</p>: <p>{info.twitter_username}</p>}</div>
                 </div>
                 <div className="card_info3">
-                    <div className="url"><p>{props.info.url}</p></div>
-                    <div className="company">{props.info.company}</div>
+                    <div className="url"><p>{info.url}</p></div>
+                    <div className="company">{info.company}</div>
                 </div>
             </div>
             

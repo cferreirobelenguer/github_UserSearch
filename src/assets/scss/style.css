@@ -171,7 +171,7 @@
   padding-left: 20px;
 }
 
-.card_containerInfo2 {
+.card_containerInfo2Dark {
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -179,6 +179,18 @@
   align-items: center;
   border-radius: 10px;
   font-size: 10px;
+  background-color: #141C2F;
+}
+
+.card_containerInfo2Light {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 10px;
+  background-color: #FCFAFF;
 }
 
 .card_container_info1 {
@@ -205,18 +217,18 @@
 }
 
 .card_repos_url {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .card_followers_url {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .card_following_url {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .card_containerInfo3 {
@@ -340,7 +352,6 @@
     border-radius: 50px;
     width: 70px;
     height: 70px;
-    padding-left: 20px;
   }
   .card_info2 {
     display: flex;
@@ -382,17 +393,35 @@
     padding-left: 10px;
     font-size: 8px;
   }
-  .card_containerInfo2 {
+  .card_containerInfo2Light {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 6px;
+    background-color: #FEFEFE;
+  }
+  .card_containerInfo2Dark {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 6px;
+    background-color: #141C2F;
   }
   .url {
     font-size: 6px;
+  }
+  .card_container_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 }
 @media (max-width: 400px) {
@@ -436,7 +465,6 @@
     border-radius: 50px;
     width: 70px;
     height: 70px;
-    padding-left: 20px;
   }
   .card_username {
     text-align: left;
@@ -462,14 +490,41 @@
     padding-left: 10px;
     font-size: 8px;
   }
-  .card_containerInfo2 {
+  .card_containerInfo2Light {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 4px;
+    background-color: #FCFAFF;
+  }
+  .card_containerInfo2Dark {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 4px;
+    background-color: #141C2F;
+    width: 100%;
+  }
+  .card_repos_url {
+    font-size: 4px;
+  }
+  .card_followers_url {
+    font-size: 4px;
+  }
+  .card_following_url {
+    font-size: 4px;
+  }
+  .card_container_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
